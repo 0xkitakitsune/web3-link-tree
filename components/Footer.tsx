@@ -59,10 +59,10 @@ export const Footer: React.FC = ({}) => {
 const MediaIcons = () => {
   return (
     <div className='h-8 flex w-full items-center justify-center space-x-8 transition-all duration-200 text-3xl text-primary/70'>
-      {TWITTER !== undefined ? (
+      {TWITTER.link !== undefined ? (
         <a
           className='hover:text-4xl hover:text-primary w-7'
-          href={TWITTER}
+          href={TWITTER.link}
           target='_blank'
           rel='noreferrer'>
           <FaTwitter />
@@ -71,10 +71,10 @@ const MediaIcons = () => {
         <></>
       )}
 
-      {MEDIUM !== undefined ? (
+      {MEDIUM.link !== undefined ? (
         <a
           className='hover:text-4xl hover:text-primary w-7'
-          href={MEDIUM}
+          href={MEDIUM.link}
           target='_blank'
           rel='noreferrer'>
           <FaMedium />
@@ -83,10 +83,10 @@ const MediaIcons = () => {
         <></>
       )}
 
-      {SUBSTACK !== undefined ? (
+      {SUBSTACK.link !== undefined ? (
         <a
           className='hover:text-4xl hover:text-primary w-7'
-          href={SUBSTACK}
+          href={SUBSTACK.link}
           target='_blank'
           rel='noreferrer'>
           <SiSubstack />
@@ -95,10 +95,10 @@ const MediaIcons = () => {
         <></>
       )}
 
-      {GITHUB !== undefined ? (
+      {GITHUB.link !== undefined ? (
         <a
           className='hover:text-4xl hover:text-primary w-7'
-          href={GITHUB}
+          href={GITHUB.link}
           target='_blank'
           rel='noreferrer'>
           <BsGithub />
@@ -107,10 +107,10 @@ const MediaIcons = () => {
         <></>
       )}
 
-      {DISCORD !== undefined ? (
+      {DISCORD.link !== undefined ? (
         <a
           className='hover:text-4xl hover:text-primary w-7'
-          href={DISCORD}
+          href={DISCORD.link}
           target='_blank'
           rel='noreferrer'>
           <BsDiscord />

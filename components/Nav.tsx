@@ -2,11 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import useEagerConnect from '../hooks/useEagerConnect';
 import Wallet from './Wallet';
-import { HEADER, HEADERLINK } from '../config';
+import { DETAILS, LOGO } from '../config';
 import { Tip } from './Tip';
-
-const header = HEADER;
-const headerLink = HEADERLINK;
 
 export const Nav = () => {
   let triedToEagerConnect = useEagerConnect();
@@ -30,8 +27,10 @@ export const Nav = () => {
           </div>
           
           <div className='flex items-center space-x-2'>
+            {DETAILS.wallet !== undefined ? <>
             <Tip />
-            <Wallet triedToEagerConnect={triedToEagerConnect} />
+            <Wallet triedToEagerConnect={triedToEagerConnect} /> </>
+            : <></> }
           </div>
         </div>
       </header>
@@ -40,18 +39,18 @@ export const Nav = () => {
 };
 
 const Logo = () => (
-  <a href={headerLink} target='_blank' rel='noreferrer'>
+  <a href={DETAILS.headerlink} target='_blank' rel='noreferrer'>
     <div className='flex items-center space-x-3 cursor-pointer'>
       <Image
         alt='Logo'
-        src='/logo.png'
+        src={LOGO}
         height={48}
         width={48}
         className='rounded-xl'
       />
-      {header?
+      {DETAILS.header?
       <span className='font-medium text-white/95 text-2xl hidden xs:inline bg-black/20 py-1.5 px-2 shadow-inner rounded-xl'>
-        {header}
+        {DETAILS.header}
       </span>: <></> }
     </div>
   </a>

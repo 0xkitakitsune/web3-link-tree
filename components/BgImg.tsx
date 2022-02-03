@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import bg from '../public/bg.gif'
+import { BG } from '../config';
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -39,7 +39,7 @@ const BgImg = () => {
     return (
       <div className='fixed z-0 top-0'>
         <Image
-          src={bg}
+          src={BG}
           width={width}
           height={height}
         />

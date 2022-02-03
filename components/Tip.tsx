@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 import Image from 'next/image';
 import metamask from '../public/metamask.png';
-import { NAME, WALLET } from '../config';
+import { DETAILS } from '../config';
 import { useWeb3React } from '@web3-react/core';
 import { ethers } from 'ethers';
 
@@ -41,7 +41,7 @@ export const Tip: React.FC = ({}) => {
       setError,
       setTxs,
       ether: data.get('ether'),
-      addr: WALLET,
+      addr: DETAILS.wallet,
     });
   };
 
@@ -120,7 +120,7 @@ export const Tip: React.FC = ({}) => {
                   as='span'
                   className='text-3xl font-bold leading-6 text-white/90'
                 >
-                  Donate to {NAME}
+                  Donate to {DETAILS.name}
                 </Dialog.Title>
                 <div className='mt-2 flex-col space-y-2'>
                   <p className='text-sm text-gray-200/90 font-semibold'>
@@ -141,7 +141,7 @@ export const Tip: React.FC = ({}) => {
                             type='text'
                             name='addr'
                             className='placeholder-primary font-semibold hover:cursor-not-allowed rounded-lg shadow-inner bg-gray-500/20 p-3 backdrop-blur w-full focus:ring focus:outline-none'
-                            placeholder={`${NAME}`}
+                            placeholder={DETAILS.name}
                             disabled
                           />
                         </div>

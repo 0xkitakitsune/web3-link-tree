@@ -6,63 +6,60 @@ import { DISCORD, GITHUB, MEDIUM, SUBSTACK, TWITTER } from '../config';
 import { BsDiscord, BsGithub } from 'react-icons/bs';
 import { SiSubstack } from 'react-icons/si';
 
-import btn_twitter from '../public/btn_twitter.png'
-import btn_medium from '../public/btn_medium.png'
-
 const Index: NextPage = () => {
   return (
     <div className='flex-col flex items-center justify-between h-full w-full py-8'>
       <div className='flex-col items-center h-full w-72 space-y-10 justify-center'>
-        {TWITTER !== undefined ? (
+        {TWITTER.button !== undefined ? (
           <ImgButton
             text='Twitter'
             icon={<FaTwitter />}
-            src={btn_twitter}
-            href={TWITTER}
+            src={TWITTER.button}
+            href={TWITTER.link}
           />
         ) : (
           <></>
         )}
 
-        {MEDIUM !== undefined ? (
+        {MEDIUM.button !== undefined ? (
           <ImgButton
             text='Medium'
             icon={<FaMedium />}
-            src={btn_medium}
-            href={MEDIUM}
+            src={MEDIUM.button}
+            href={MEDIUM.link}
           />
         ) : (
           <></>
         )}
 
-        {SUBSTACK !== undefined ? (
+        {SUBSTACK.button !== undefined ? (
           <ImgButton
             text='Substack'
             icon={<SiSubstack />}
-            src={null}
-            href={SUBSTACK}
+            src={SUBSTACK.button}
+            href={SUBSTACK.link}
           />
         ) : (
           <></>
         )}
 
-        {GITHUB !== undefined ? (
+        {GITHUB.button !== undefined ? (
           <ImgButton
             text='Github'
             icon={<BsGithub />}
-            src={null}
-            href={GITHUB}
+            src={GITHUB.button}
+            href={GITHUB.link}
           />
         ) : (
           <></>
         )}
 
-        {DISCORD !== undefined ? (
+        {DISCORD.button !== undefined ? (
           <ImgButton
             text='Discord'
             icon={<BsDiscord />}
-            src={null}
-            href={DISCORD}
+            src={DISCORD.button}
+            href={DISCORD.link}
           />
         ) : (
           <></>

@@ -53,11 +53,6 @@ export const SUBSTACK = {
   button: undefined
 }
 
-export const FTX = {
-  link: '',
-  button: btn_discord
-}
-
 export const ABOUT = {
   title: undefined,
   text: undefined

@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+[Read the detailed guide here](https://naut.substack.com/p/how-to-create-a-web3-link-tree)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Customize
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Add your name, wallet address, social media links and more in **config.ts**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Images
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Save images to the **/images/** folder
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Background image can be a .gif or any size image
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Button images should be 1500x500px images.
+Upload your desired image as a Twitter header, then save it for the optimal resolution.
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Tip Jar
+
+[@0xNaut](https://twitter.com/0xNaut)
+
+0xbab4c9669a73e8b4aab72bca98b9dcb8dbc7a0fb

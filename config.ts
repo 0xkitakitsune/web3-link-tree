@@ -4,7 +4,7 @@
 // Set 'wallet' to undefined if you wish to disable the Tipping feature
 export const DETAILS = {
   name: 'Scarpa',
-  header: 'TraderScarpa',
+  header: 'Scarpa',
   headerlink: 'https://twitter.com/TraderScarpa',
   wallet: '0xEC449A181486f8569c70c853abf2C8a6A5E5707F'
 }

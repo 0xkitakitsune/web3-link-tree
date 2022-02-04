@@ -6,6 +6,7 @@ import { ABOUT, ABOUT2, ABOUT3, ABOUT4, ABOUT5 } from '../config';
 export const About: React.FC = ({}) => {
   return (
     <>
+    {ABOUT.text !== undefined ?
     <div className='bg-gray-900/50 backdrop-blur w-full mx-3 max-w-md p-2 ring-1 ring-primary/80 rounded-xl shadow text-white/80 space-y-2.5'>
       {ABOUT.text ? 
       <Disclosure>
@@ -112,7 +113,7 @@ export const About: React.FC = ({}) => {
         )}
       </Disclosure> : <></>}
 
-    </div>
+    </div> : <></> }
     </>
   );
 };
